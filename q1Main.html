@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 1</title>
+<style>
+    body {
+        font-family: Arial;
+    }
+    .header {
+        align-items: center;
+        background-color: #135386;
+        height: 30%;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .search-box {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .search-box input[type="text"] {
+        padding: 5px;
+        margin-right: 2px;
+    }
+    .menu-container {
+        display: flex;
+        align-items: center;
+    }
+    .search-box button {
+        padding: 5px;
+    }
+    .menu {
+        list-style: none;
+        display: flex;
+    }
+    .menu > li {
+        padding: 0 10px;
+        position: relative;
+    }
+    .menu li a {
+        font-size: 15px;
+        color: white;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        color:black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .submenu li a {
+        padding: 10px 20px;
+        display: block;
+        color: black;
+    }
+    .menu li:hover .submenu {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <a href="https://antra.com">
+            <img src="static/antra_logo.png">
+        </a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+
+    <ul class="menu">
+        <li><a href="https://antra.com">VIEWS</a></li>
+        <li>
+            <a href="https://antra.com">ABOUT THE UNIVERSITY</a>
+            <ul class="submenu">
+                <li><a href="https://antra.com">UNIVERSITY Introduction</a></li>
+                <li><a href="https://antra.com">University History</a></li>
+                <li><a href="https://antra.com">University Alumini</a></li>
+            </ul>
+        </li>
+        <li><a href="#">TRAINING COURSES</a></li>
+        <li><a href="#">FOR COMPANIES</a></li>
+        <li><a href="#">FORUM</a></li>
+        <li><a href="#">CONTACTS</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

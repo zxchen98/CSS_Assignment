@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 2</title>
+<style>
+  .footer {
+    background-color: #3a3939;
+    color: white;
+    padding: 20px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .footer-section {
+    padding-bottom: 10px;
+    flex: 1; 
+    min-width: 150px;
+  }
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-section ul li a {
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  .map {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    background-image: url('static/map.png');
+    background-position: center;
+    margin-top: 20px;
+  }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box; 
+}
+
+</style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v19.0" nonce="sLPByxQ1"></script>
+
+<footer class="footer">
+  <div class="footer-section">
+    <h3>Corporate Office:</h3>
+    <address>
+      21365 Ridgetop Circle<br>
+      Suite #400<br>
+      Dulles, VA 20166<br>
+      Ph: 703 994 4565<br>
+      email: <a href="mailto:info@antra.net">info@antra.net</a>
+    </address>
+  </div>
+
+  <div class="footer-section">
+    <h3>Services</h3>
+    <ul>
+      <li><a href="https://antra.com/">Technology Services</a></li>
+      <li><a href="https://antra.com/">Business Advisory Services</a></li>
+      <li><a href="https://antra.com/">Professional Services</a></li>
+      <li><a href="https://antra.com/">Blog</a></li>
+      <li><a href="https://antra.com/">About Us</a></li>
+      <li><a href="https://antra.com/">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h3>Resources</h3>
+    <ul>
+      <li><a href="https://antra.com/">Case Studies</a></li>
+      <li><a href="https://antra.com/">White Papers</a></li>
+      <li><a href="https://antra.com/">Technology Resources</a></li>
+      <li><a href="https://antra.com/">Top Technology Trends 2017</a></li>
+      <li><a href="https://antra.com/">Agile Transformations</a></li>
+      <li><a href="https://antra.com/">Web & Mobile Application Development</a></li>
+    </ul>
+  </div>
+
+
+  <div class="footer-section">
+    <div class="map"></div>
+  </div>
+
+</footer>
+<div class="footer-bottom" >
+    © 2017 Antra, Inc. All Rights Reserved.
+  </div>
+
+</body>
+</html>
